@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myadd-rc
+  type: front-end
+spec:
+  template:
+    metadata:
+      name: nginx
+    spec:
+      containers:
+      - name: nginx 
+        image: nginx
